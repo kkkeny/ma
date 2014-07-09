@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>预约</title>
+        <meta name="viewport" content="width=device-width; initial-scale=0.6,minimum-scale=0.6,maximum-scale=0.6,user-scalable=no,target-densitydpi=high-dpi">
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="format-detection" content="email=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    </head>
+    <body>
+        <nav>
+            <a href="javascript:;" class="hidden"><span class="back" onclick="javascript:history.back(-1);">&nbsp;</span></a>预约管家
+        </nav>
+        <form action="#nogo" method="post" class="order-form">
+            <section>
+                <table class="order-list order-desc">
+                    <tbody>
+                        <tr>
+                            <td>联
+                            系
+                            人 </td>
+                            <td><input type="text" value="" placeholder="输入用户名" name="name"/></td>
+                        </tr>
+                        <tr>
+                            <td>联系电话</td>
+                            <td><input type="text" value="" placeholder="输入电话号码" name="tel"/></td>
+                        </tr>
+                        <tr>
+                            <td>家庭地址</td>
+                            <td><textarea pholder="请输入您的家庭地址，例如XX区XX楼XX号" class="place-holder" name="addr" value="">请输入您的家庭地址，例如XX区XX楼XX号</textarea></td>
+                        </tr>
+                        <tr>
+                            <td>预约时间</td>
+                            <td id="order-date" class="place-holder">选择预约时间</td>
+                        </tr>
+                        <tr>
+                            <td>家庭面积</td>
+                            <td><span class="square"><a href="javascript:;" class="selected">120平以下</a><a href="javascript:;">121-180平</a><a href="javascript:;">181平以上</a></span></td>
+                        </tr>
+                        <tr>
+                            <td>备注</td>
+                            <td><textarea pholder="目前仅支持北京望京地区，其他地区正在努力拓展" class="place-holder" name="desc">目前仅支持北京望京地区，其他地区正在努力拓展</textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="order-error">
+                    <span>请输入正确的手机号</span><span>请输入您的家庭地址</span><span>请选择您的预约时间</span>
+                </p>
+                <input type="hidden" value="" name="date"/>
+                <input type="hidden" value="90" name="square"/>
+                <input type="hidden" value="90" name="rmb"/>
+                <input type="hidden" value="90" name="xrmb"/>
+            </section>
+            <section class="pay">
+                <span>现价:<span id="rmb">600</span>元<span>原价:<span id="xrmb">900</span>元</span></span><input type="submit" class="btn c-1" value="确定"/>
+            </section>
+        </form>
+        <section class="mask hidden">
+            <section>
+                <nav>
+                    <button>
+                        取消
+                    </button>
+                    <span>到达时间可能有半小时浮动</span>
+                    <button>
+                        完成
+                    </button>
+                </nav>
+                <section>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p>
+                        <span class="middle">&nbsp;</span>
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <ul>
+                        <li value="2014-3-22 ">
+                            3月22日
+                        </li>
+                        <li value="2014-3-22">
+                            3月22日
+                        </li>
+                        <li value="2014-3-22">
+                            3月22日
+                        </li>
+                        <li value="2014-3-22">
+                            3月22日
+                        </li>
+                        <li value="2014-3-22">
+                            3月22日
+                        </li>
+                        <li value="2014-3-22">
+                            3月22日
+                        </li>
+                        <li value="2014-3-22">
+                            3月22日
+                        </li>
+                    </ul>
+                    <ul>
+                        <li value="08">
+                            08点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            12点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            00点
+                        </li>
+                        <li>
+                            18点
+                        </li>
+                    </ul>
+                    <ul>
+                        <li value=":00">
+                            00分
+                        </li>
+                        <li>
+                            30分
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <script type="text/javascript">
+            var $_price = [{
+                rmb : 600,
+                xrmb : 900,
+                square:"中文"
+            }, {
+                rmb : 700,
+                xrmb : 1000,
+                square:"中文"
+            }, {
+                rmb : 800,
+                xrmb : 5000,
+                square:"中文"
+            }];
+        </script>
+        <script type="text/javascript" src="../js/wx.js"></script>
+        <script type="text/javascript" src="../js/order.js"></script>
+    </body>
+</html>

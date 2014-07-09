@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>订单列表</title>
+        <meta name="viewport" content="width=device-width; initial-scale=0.6,minimum-scale=0.6,maximum-scale=0.6,user-scalable=no,target-densitydpi=high-dpi">
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="format-detection" content="email=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    </head>
+    <body>
+        <nav>
+            <a href="javascript:;" onclick="javascript:history.back(-1);"><span class="back">&nbsp;</span></a>我的订单
+        </nav>
+        <section>
+            <table class="order-list">
+                <tbody>
+                    <tr>
+                        <td><a href="#">订单号&nbsp;:&nbsp;201301020303</a><br /><span>时间</span>&nbsp;:&nbsp;2013-1-1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">订单号&nbsp;:&nbsp;201301020303</a><br /><span>时间</span>&nbsp;:&nbsp;2013-1-1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="loading">
+            <span>&nbsp;</span>数据加载中...
+        </section>
+        <script type="text/javascript">
+            var $_list = {
+                url : "/",
+                max : 5
+            };
+        </script>
+        <script type="text/javascript" src="../js/ajax.js"></script>
+        <script type="text/javascript" src="../js/more.js"></script>
+    </body>
+</html>

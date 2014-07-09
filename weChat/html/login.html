@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>登录</title>
+        <meta name="viewport" content="width=device-width; initial-scale=0.6,minimum-scale=0.6,maximum-scale=0.6,user-scalable=no,target-densitydpi=high-dpi">
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="format-detection" content="email=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    </head>
+    <body>
+        <nav>
+            <a href="javascript:;" onclick="javascript:history.back(-1);"><span class="back">&nbsp;</span></a>登录
+        </nav>
+        <section>
+            <form>
+                <input type="text" placeholder="输入手机号" class="mb"/>
+                <input type="text" placeholder="短信验证码" class="code"/><a href="/weixin/ajax/login_code/?phone=" class="code btn c-1">获取验证码</a>
+                <article class="clear order-error"></article>
+                <input type="submit" value="提交" class="btn c-1"/>
+            </form>
+        </section>
+        <script type="text/javascript" src="../js/ajax.js"></script>
+        <script type="text/javascript" src="../js/login.js"></script>
+    </body>
+</html>
