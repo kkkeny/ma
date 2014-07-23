@@ -1,0 +1,22 @@
+nav, article {
+    padding: 0 4%;
+}
+nav {
+    font-size: 1.15em;
+    color: #ed6640;
+    background-color: #fff;
+    line-height: 2em;
+}
+article {
+    line-height: 1.6em;
+    padding: 4% 4%;
+}
+.price {
+    text-align: center;
+    font-size: 0;
+}
+.price p {
+    font-size: 1rem;
+    line-height: 4rem;
+    text-align: left;
+}
