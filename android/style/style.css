@@ -1,0 +1,54 @@
+html, body {
+    font-size: 26px;
+}
+body, body * {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    height: 100%;
+    color: #000;
+    font-family: Helvetica, -webkit-pictograph;
+    background-color: #f4f3f1;
+    padding: 5% 0;
+}
+img {
+    width: 100%;
+}
+nav, article {
+    padding: 0 4%;
+}
+nav {
+    font-size: 1.15em;
+    color: #ed6640;
+    background-color: #fff;
+    line-height: 2em;
+    /*height: 2em;*/
+}
+article {
+    line-height: 1.6em;
+    padding: 4% 4%;
+}
+.price {
+    text-align: center;
+    font-size: 0;
+}
+.price p {
+    font-size: 1rem;
+    line-height: 4rem;
+    text-align: left;
+}
+/*@formatter:off*/
+@media screen and (min-device-width: 481px) and (-Webkit-min-device-pixel-ratio:2){
+    /*for 大屏andriod*/
+   html,body{
+       font-size: 24px;
+   }
+}
+@media screen and (-Webkit-max-device-pixel-ratio:1.5){
+    /*for 低配置的屏幕的安卓*/
+    html,body{
+        font-size: 22px;
+    }
+}
