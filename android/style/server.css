@@ -1,0 +1,46 @@
+body {
+    padding: 5% 4%;
+}
+nav {
+    line-height: 1em;
+}
+nav:first-letter {
+    font-size: 150%;
+}
+article {
+    margin: 8% 0;
+}
+article aside {
+    display: inline-table;
+    width: 56%;
+    float: left;
+}
+article aside:first-child {
+    width: 42%;
+    font-size: 0;
+    margin-right: 2%;
+}
+article aside p {
+    font-size: 0.9em;
+    /*line-height: 2.5em;*/
+}
+article aside p:first-child {
+    font-size: 1.08em;
+    color: #ed6640;
+    /*line-height: 1.5em;*/
+}
+article.desc {
+    line-height: 1.8em;
+}
+article.pic img {
+    width: 48%;
+}
+article.pic img:last-child {
+    float: right;
+}
+.price {
+    font-size: 0;
+}
+.price img {
+    margin-bottom: 4%;
+}
