@@ -1,22 +1,53 @@
+body {
+    background-color: #e5f4f3;
+}
 nav, article {
     padding: 0 4%;
 }
 nav {
     font-size: 1.15em;
     color: #ed6640;
-    background-color: #fff;
+    /*background-color: #fff;*/
     line-height: 2em;
+    padding-top: 4%;
 }
 article {
     line-height: 1.6em;
-    padding: 4% 4%;
+    padding: 2% 4% 4% 4%;
+    color: #3e8384;
+    display: -webkit-box;
+    border-bottom: 1px solid #bbd9d9;
+}
+article span, article p {
+    -webkit-box-flex: 1;
 }
 .price {
     text-align: center;
     font-size: 0;
+    display: block;
 }
 .price p {
-    font-size: 1rem;
-    line-height: 4rem;
+    font-size: 0.8rem;
+    line-height: 2rem;
     text-align: left;
+    color: #219b9c;
+}
+nav span, article span {
+    font-size: 80%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: #fff;
+    width: 2em;
+    text-align: center;
+    background-color: #ed6640;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    position: relative;
+    top: -0.1em;
+    margin-right: 0.4em;
+}
+article span{
+    background-color: #219b9c;
 }

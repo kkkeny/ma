@@ -1,14 +1,24 @@
-body {
-    padding: 5% 4%;
+.warp {
+    padding: 4% 4% 0 4%;;
 }
 nav {
     line-height: 1em;
 }
-nav:first-letter {
-    font-size: 150%;
+nav span {
+    line-height: 1.2em;
+    margin-left: 0.3em;
+}
+nav span:before {
+    content: '';
+    width: 0.8em;
+    height: 1.2em;
+    /* line-height: 1em; */
+    display: inline-block;
+    background-color: #ed6640;
+    float: left;
 }
 article {
-    margin: 8% 0;
+    margin-bottom: 8%;
 }
 article aside {
     display: inline-table;
@@ -16,13 +26,13 @@ article aside {
     float: left;
 }
 article aside:first-child {
-    width: 42%;
+    width: 40%;
     font-size: 0;
-    margin-right: 2%;
+    margin-right: 4%;
 }
 article aside p {
     font-size: 0.9em;
-    /*line-height: 2.5em;*/
+    line-height: 1.3em;
 }
 article aside p:first-child {
     font-size: 1.08em;
@@ -30,7 +40,7 @@ article aside p:first-child {
     /*line-height: 1.5em;*/
 }
 article.desc {
-    line-height: 1.8em;
+    line-height: 1.6em;
 }
 article.pic img {
     width: 48%;
@@ -42,5 +52,11 @@ article.pic img:last-child {
     font-size: 0;
 }
 .price img {
+    margin-bottom: 4%;
+}
+article.pic img, aside img {
+    border-radius: 10px;
+}
+body > img {
     margin-bottom: 4%;
 }
